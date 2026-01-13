@@ -30,16 +30,16 @@ using diagrams, policy examples, and real-world security patterns.
 ### 1. Least Privilege
 Policies grant only required actions and resources.
 
-Good: Policy
-```json
+## Good: Policy
+
 {
   "Effect": "Allow",
   "Action": ["s3:GetObject"],
   "Resource": "arn:aws:s3:::example-bucket/*"
 }
 
- Bad: Policy
-```json
+## Bad: Policy
+
 {
   "Effect": "Allow",
   "Action": "*",

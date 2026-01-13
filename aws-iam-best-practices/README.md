@@ -31,7 +31,7 @@ using diagrams, policy examples, and real-world security patterns.
 Policies grant only required actions and resources.
 
 Good: Policy
-
+```json
 {
   "Effect": "Allow",
   "Action": ["s3:GetObject"],
@@ -39,7 +39,7 @@ Good: Policy
 }
 
  Bad: Policy
-
+```json
 {
   "Effect": "Allow",
   "Action": "*",
